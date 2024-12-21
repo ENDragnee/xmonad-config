@@ -1,0 +1,17 @@
+/* colors */
+
+* {
+  /* background-alt: #121212ff; */
+  background-alt: rgba(0, 0, 0, 1);
+  background: #121212a2;
+  /* background: rgba(231, 78, 78, 0.75); */
+  selected: #ffd5cdff;
+  foreground: #eeeeeeff;
+  ac: #ea907aff;
+  red: #d35d6eff;
+  green: #90c861ff;
+  yellow: #fdd835ff;
+  blue: #84afdbff;
+  purple: #c47eb7ff;
+  cyan: #4dd0e1ff;
+}
