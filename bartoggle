@@ -1,0 +1,20 @@
+#!/bin/bash
+if pgrep polybar; then
+	--pkill tint2
+	pkill polybar
+	exit 1
+else
+	--exec tint2 -c ~/.config/tint2/panellauncher.tint2rc &
+	--exec tint2 -c ~/.config/tint2/clock.tint2rc &
+	--exec tint2 -c ~/.config/tint2/date.tint2rc &
+	--exec tint2 -c ~/.config/tint2/customscripts.tint2rc &
+	--exec tint2 -c ~/.config/tint2/icons.tint2rc &
+	--exec tint2 -c ~/.config/tint2/workspaces.tint2rc &
+
+    exec polybar windows &
+    exec polybar systray &
+    exec polybar date &
+    exec polybar workspace &
+
+fi
+exit
